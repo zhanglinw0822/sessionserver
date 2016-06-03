@@ -1,0 +1,568 @@
+[INFO ] 2016-01-12 11:18:56.056 [ClassPathXmlApplicationContext] [main      ] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@571a75a2: display name [org.springframework.context.support.ClassPathXmlApplicationContext@571a75a2]; startup date [Tue Jan 12 11:18:56 CST 2016]; root of context hierarchy
+[INFO ] 2016-01-12 11:18:56.056 [XmlBeanDefinitionReader] [main      ] - Loading XML bean definitions from class path resource [PMES_timebargain.xml]
+[INFO ] 2016-01-12 11:18:57.057 [XmlBeanDefinitionReader] [main      ] - Loading XML bean definitions from class path resource [dataSource.xml]
+[INFO ] 2016-01-12 11:18:57.057 [ClassPathXmlApplicationContext] [main      ] - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@571a75a2]: org.springframework.beans.factory.support.DefaultListableBeanFactory@54c01e99
+[INFO ] 2016-01-12 11:18:57.057 [PropertyPlaceholderConfigurer] [main      ] - Loading properties file from class path resource [appConfig.properties]
+[INFO ] 2016-01-12 11:18:57.057 [DefaultListableBeanFactory] [main      ] - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@54c01e99: defining beans [propertyConfigurer,dataSource,auDataSource,config,supperDAO,tradeQueryDAO,userDAO]; root of factory hierarchy
+[INFO ] 2016-01-12 11:18:58.058 [ServerShell] [main      ] - system###172.31.100.71###启动会话服务器###ps1_1###中###NA
+[INFO ] 2016-01-12 11:18:58.058 [ServerShell] [main      ] - system###172.31.100.71###读取RMI配置信息###ps1_1###中###NA
+[INFO ] 2016-01-12 11:18:59.059 [ServerShell] [main      ] - system###172.31.100.71###读取RMI配置信息###ps1_1###成功###NA
+[INFO ] 2016-01-12 11:18:59.059 [ServerShell] [main      ] - system###172.31.100.71###获取RMI配置###rmi://127.0.0.1:17003/LogonRMI###成功###NA
+[INFO ] 2016-01-12 11:18:59.059 [ServerShell] [main      ] - system###172.31.100.71###同步RMI配置###rmi://127.0.0.1:17005/SyncRMI###成功###NA
+[ERROR] 2016-01-12 11:19:00.000 [SyncServer] [main      ] - system###172.31.100.71###查找对端同步的RMI###NA###失败java.rmi.ConnectException: Connection refused to host: 127.0.0.1; nested exception is: 
+	java.net.ConnectException: Connection refused: connect###NA
+[INFO ] 2016-01-12 11:19:01.001 [ServerShell] [main      ] - system###172.31.100.71###启动会话服务器###ps1_1###中###NA
+[INFO ] 2016-01-12 11:19:11.011 [ServerShell] [main      ] - system###172.31.100.71###RMI启动服务###ps1_1###成功###NA
+[INFO ] 2016-01-12 11:19:53.053 [LogonRMIImpl] [RMI TCP Connection(4)-172.31.100.71] - Thread:24###172.31.100.71###LogonRMIImpl.logon###begin###null###begin###NA
+[INFO ] 2016-01-12 11:19:53.053 [LogonRMIImpl] [RMI TCP Connection(4)-172.31.100.71] - system###172.31.100.71###登陆交易服务器###tpme.PMES.timebargain.server.model.Trader@314585[
+  traderID=<null>
+  name=<null>
+  firmID=<null>
+  regWord=<null>
+  password=<null>
+  keyCode=<null>
+  keyStatus=0
+  logonIP=<null>
+  status=0
+  logonTime=0
+  clientToken=<null>
+  ZID=<null>
+]###中###NA
+[INFO ] 2016-01-12 11:19:53.053 [LogonRMIImpl] [RMI TCP Connection(4)-172.31.100.71] - Thread:24###172.31.100.71###LogonManager.logon###begin###null###begin###NA
+[INFO ] 2016-01-12 11:19:53.053 [LogonManager] [RMI TCP Connection(4)-172.31.100.71] - Thread:24###172.31.100.71###UserDAO.getOneTraderById###begin###null###begin###NA
+[INFO ] 2016-01-12 11:19:53.053 [LogonManager] [RMI TCP Connection(4)-172.31.100.71] - Thread:24###172.31.100.71###UserDAO.getOneTraderById###end###null###end###5ms
+[INFO ] 2016-01-12 11:19:53.053 [LogonRMIImpl] [RMI TCP Connection(4)-172.31.100.71] - Thread:24###172.31.100.71###LogonManager.logon###end###null###end###65ms
+[INFO ] 2016-01-12 11:19:53.053 [LogonRMIImpl] [RMI TCP Connection(4)-172.31.100.71] - system###172.31.100.71###登陆交易服务器###tpme.PMES.timebargain.server.model.Trader@314585[
+  traderID=<null>
+  name=<null>
+  firmID=<null>
+  regWord=<null>
+  password=<null>
+  keyCode=<null>
+  keyStatus=0
+  logonIP=<null>
+  status=0
+  logonTime=0
+  clientToken=<null>
+  ZID=<null>
+]###失败###retCode: -1
+[INFO ] 2016-01-12 11:19:53.053 [LogonRMIImpl] [RMI TCP Connection(4)-172.31.100.71] - Thread:24###172.31.100.71###LogonRMIImpl.logon###end###null###end###67ms
+[INFO ] 2016-01-12 15:46:07.007 [ClassPathXmlApplicationContext] [main      ] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2c19e15c: display name [org.springframework.context.support.ClassPathXmlApplicationContext@2c19e15c]; startup date [Tue Jan 12 15:46:07 CST 2016]; root of context hierarchy
+[INFO ] 2016-01-12 15:46:07.007 [XmlBeanDefinitionReader] [main      ] - Loading XML bean definitions from class path resource [PMES_timebargain.xml]
+[INFO ] 2016-01-12 15:46:08.008 [XmlBeanDefinitionReader] [main      ] - Loading XML bean definitions from class path resource [dataSource.xml]
+[INFO ] 2016-01-12 15:46:08.008 [ClassPathXmlApplicationContext] [main      ] - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@2c19e15c]: org.springframework.beans.factory.support.DefaultListableBeanFactory@52458f41
+[INFO ] 2016-01-12 15:46:08.008 [PropertyPlaceholderConfigurer] [main      ] - Loading properties file from class path resource [appConfig.properties]
+[INFO ] 2016-01-12 15:46:08.008 [DefaultListableBeanFactory] [main      ] - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@52458f41: defining beans [propertyConfigurer,dataSource,auDataSource,config,supperDAO,tradeQueryDAO,userDAO]; root of factory hierarchy
+[INFO ] 2016-01-12 15:46:08.008 [ServerShell] [main      ] - system###192.168.10.54###启动会话服务器###ps1_1###中###NA
+[INFO ] 2016-01-12 15:46:08.008 [ServerShell] [main      ] - system###192.168.10.54###读取RMI配置信息###ps1_1###中###NA
+[INFO ] 2016-01-12 15:46:10.010 [ServerShell] [main      ] - system###192.168.10.54###读取RMI配置信息###ps1_1###成功###NA
+[INFO ] 2016-01-12 15:46:10.010 [ServerShell] [main      ] - system###192.168.10.54###获取RMI配置###rmi://127.0.0.1:17003/LogonRMI###成功###NA
+[INFO ] 2016-01-12 15:46:10.010 [ServerShell] [main      ] - system###192.168.10.54###同步RMI配置###rmi://127.0.0.1:17005/SyncRMI###成功###NA
+[ERROR] 2016-01-12 15:46:11.011 [SyncServer] [main      ] - system###192.168.10.54###查找对端同步的RMI###NA###失败java.rmi.ConnectException: Connection refused to host: 127.0.0.1; nested exception is: 
+	java.net.ConnectException: Connection refused: connect###NA
+[INFO ] 2016-01-12 15:46:11.011 [ServerShell] [main      ] - system###192.168.10.54###启动会话服务器###ps1_1###中###NA
+[ERROR] 2016-01-12 15:46:12.012 [ServerShell] [main      ] - system###192.168.10.54###RMI启动服务###ps1_1###失败java.rmi.server.ExportException: Port already in use: 0; nested exception is: 
+	java.net.BindException: Address already in use: JVM_Bind###NA
+[INFO ] 2016-01-12 15:47:13.013 [LogonRMIImpl] [RMI TCP Connection(59)-172.31.100.71] - Thread:80###172.31.100.71###LogonRMIImpl.logon###begin###null###begin###NA
+[INFO ] 2016-01-12 15:47:29.029 [LogonRMIImpl] [RMI TCP Connection(59)-172.31.100.71] - system###172.31.100.71###登陆交易服务器###tpme.PMES.timebargain.server.model.Trader@5f99ea3c[
+  traderID=<null>
+  name=<null>
+  firmID=<null>
+  regWord=<null>
+  password=<null>
+  keyCode=<null>
+  keyStatus=0
+  logonIP=<null>
+  status=0
+  logonTime=0
+  clientToken=<null>
+  ZID=<null>
+]###中###NA
+[INFO ] 2016-01-12 15:47:38.038 [LogonRMIImpl] [RMI TCP Connection(59)-172.31.100.71] - Thread:80###172.31.100.71###LogonManager.logon###begin###null###begin###NA
+[INFO ] 2016-01-12 15:58:51.051 [ClassPathXmlApplicationContext] [main      ] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@571a75a2: display name [org.springframework.context.support.ClassPathXmlApplicationContext@571a75a2]; startup date [Tue Jan 12 15:58:51 CST 2016]; root of context hierarchy
+[INFO ] 2016-01-12 15:58:51.051 [XmlBeanDefinitionReader] [main      ] - Loading XML bean definitions from class path resource [PMES_timebargain.xml]
+[INFO ] 2016-01-12 15:58:51.051 [XmlBeanDefinitionReader] [main      ] - Loading XML bean definitions from class path resource [dataSource.xml]
+[INFO ] 2016-01-12 15:58:51.051 [ClassPathXmlApplicationContext] [main      ] - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@571a75a2]: org.springframework.beans.factory.support.DefaultListableBeanFactory@54c01e99
+[INFO ] 2016-01-12 15:58:51.051 [PropertyPlaceholderConfigurer] [main      ] - Loading properties file from class path resource [appConfig.properties]
+[INFO ] 2016-01-12 15:58:51.051 [DefaultListableBeanFactory] [main      ] - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@54c01e99: defining beans [propertyConfigurer,dataSource,auDataSource,config,supperDAO,tradeQueryDAO,userDAO]; root of factory hierarchy
+[INFO ] 2016-01-12 15:58:51.051 [ServerShell] [main      ] - system###192.168.10.54###启动会话服务器###ps1_1###中###NA
+[INFO ] 2016-01-12 15:58:51.051 [ServerShell] [main      ] - system###192.168.10.54###读取RMI配置信息###ps1_1###中###NA
+[INFO ] 2016-01-12 15:58:52.052 [ServerShell] [main      ] - system###192.168.10.54###读取RMI配置信息###ps1_1###成功###NA
+[INFO ] 2016-01-12 15:58:52.052 [ServerShell] [main      ] - system###192.168.10.54###获取RMI配置###rmi://127.0.0.1:17003/LogonRMI###成功###NA
+[INFO ] 2016-01-12 15:58:52.052 [ServerShell] [main      ] - system###192.168.10.54###同步RMI配置###rmi://127.0.0.1:17005/SyncRMI###成功###NA
+[ERROR] 2016-01-12 15:58:53.053 [SyncServer] [main      ] - system###192.168.10.54###查找对端同步的RMI###NA###失败java.rmi.ConnectException: Connection refused to host: 127.0.0.1; nested exception is: 
+	java.net.ConnectException: Connection refused: connect###NA
+[INFO ] 2016-01-12 15:58:53.053 [ServerShell] [main      ] - system###192.168.10.54###启动会话服务器###ps1_1###中###NA
+[INFO ] 2016-01-12 15:59:03.003 [ServerShell] [main      ] - system###192.168.10.54###RMI启动服务###ps1_1###成功###NA
+[INFO ] 2016-01-12 15:59:40.040 [LogonRMIImpl] [RMI TCP Connection(6)-192.168.10.54] - Thread:29###192.168.10.54###LogonRMIImpl.logon###begin###null###begin###NA
+[INFO ] 2016-01-12 16:00:27.027 [LogonRMIImpl] [RMI TCP Connection(4)-192.168.10.54] - Thread:27###192.168.10.54###LogonRMIImpl.logon###begin###null###begin###NA
+[INFO ] 2016-01-12 16:00:44.044 [LogonRMIImpl] [RMI TCP Connection(4)-192.168.10.54] - system###192.168.10.54###登陆交易服务器###tpme.PMES.timebargain.server.model.Trader@25f7d3f[
+  traderID=<null>
+  name=<null>
+  firmID=<null>
+  regWord=<null>
+  password=<null>
+  keyCode=<null>
+  keyStatus=0
+  logonIP=<null>
+  status=0
+  logonTime=0
+  clientToken=<null>
+  ZID=<null>
+]###中###NA
+[INFO ] 2016-01-12 16:00:45.045 [LogonRMIImpl] [RMI TCP Connection(6)-192.168.10.54] - system###192.168.10.54###登陆交易服务器###tpme.PMES.timebargain.server.model.Trader@6b1ce2ad[
+  traderID=<null>
+  name=<null>
+  firmID=<null>
+  regWord=<null>
+  password=<null>
+  keyCode=<null>
+  keyStatus=0
+  logonIP=<null>
+  status=0
+  logonTime=0
+  clientToken=<null>
+  ZID=<null>
+]###中###NA
+[INFO ] 2016-01-12 16:00:47.047 [LogonRMIImpl] [RMI TCP Connection(6)-192.168.10.54] - Thread:29###192.168.10.54###LogonManager.logon###begin###null###begin###NA
+[INFO ] 2016-01-12 16:00:47.047 [LogonManager] [RMI TCP Connection(6)-192.168.10.54] - Thread:29###192.168.10.54###UserDAO.getOneTraderById###begin###null###begin###NA
+[INFO ] 2016-01-12 16:00:47.047 [LogonManager] [RMI TCP Connection(6)-192.168.10.54] - Thread:29###192.168.10.54###UserDAO.getOneTraderById###end###null###end###6ms
+[INFO ] 2016-01-12 16:00:47.047 [LogonRMIImpl] [RMI TCP Connection(6)-192.168.10.54] - Thread:29###192.168.10.54###LogonManager.logon###end###null###end###6ms
+[INFO ] 2016-01-12 16:00:47.047 [LogonRMIImpl] [RMI TCP Connection(6)-192.168.10.54] - system###192.168.10.54###登陆交易服务器###tpme.PMES.timebargain.server.model.Trader@6b1ce2ad[
+  traderID=<null>
+  name=<null>
+  firmID=<null>
+  regWord=<null>
+  password=<null>
+  keyCode=<null>
+  keyStatus=0
+  logonIP=<null>
+  status=0
+  logonTime=0
+  clientToken=<null>
+  ZID=<null>
+]###失败###retCode: -1
+[INFO ] 2016-01-12 16:00:47.047 [LogonRMIImpl] [RMI TCP Connection(6)-192.168.10.54] - Thread:29###192.168.10.54###LogonRMIImpl.logon###end###null###end###8ms
+[INFO ] 2016-01-12 16:00:47.047 [LogonRMIImpl] [RMI TCP Connection(4)-192.168.10.54] - Thread:27###192.168.10.54###LogonManager.logon###begin###null###begin###NA
+[INFO ] 2016-01-12 16:00:48.048 [LogonManager] [RMI TCP Connection(4)-192.168.10.54] - Thread:27###192.168.10.54###UserDAO.getOneTraderById###begin###null###begin###NA
+[INFO ] 2016-01-12 16:00:48.048 [LogonManager] [RMI TCP Connection(4)-192.168.10.54] - Thread:27###192.168.10.54###UserDAO.getOneTraderById###end###null###end###4ms
+[INFO ] 2016-01-12 16:00:48.048 [LogonRMIImpl] [RMI TCP Connection(4)-192.168.10.54] - Thread:27###192.168.10.54###LogonManager.logon###end###null###end###5ms
+[INFO ] 2016-01-12 16:00:48.048 [LogonRMIImpl] [RMI TCP Connection(4)-192.168.10.54] - system###192.168.10.54###登陆交易服务器###tpme.PMES.timebargain.server.model.Trader@25f7d3f[
+  traderID=<null>
+  name=<null>
+  firmID=<null>
+  regWord=<null>
+  password=<null>
+  keyCode=<null>
+  keyStatus=0
+  logonIP=<null>
+  status=0
+  logonTime=0
+  clientToken=<null>
+  ZID=<null>
+]###失败###retCode: -1
+[INFO ] 2016-01-12 16:00:48.048 [LogonRMIImpl] [RMI TCP Connection(4)-192.168.10.54] - Thread:27###192.168.10.54###LogonRMIImpl.logon###end###null###end###7ms
+[INFO ] 2016-01-12 16:01:51.051 [LogonRMIImpl] [RMI TCP Connection(8)-192.168.10.54] - Thread:29###192.168.10.54###LogonRMIImpl.logon###begin###null###begin###NA
+[INFO ] 2016-01-12 16:01:59.059 [LogonRMIImpl] [RMI TCP Connection(8)-192.168.10.54] - system###192.168.10.54###登陆交易服务器###tpme.PMES.timebargain.server.model.Trader@1ee99d0f[
+  traderID=<null>
+  name=<null>
+  firmID=<null>
+  regWord=<null>
+  password=<null>
+  keyCode=<null>
+  keyStatus=0
+  logonIP=<null>
+  status=0
+  logonTime=0
+  clientToken=<null>
+  ZID=<null>
+]###中###NA
+[INFO ] 2016-01-12 16:02:03.003 [LogonRMIImpl] [RMI TCP Connection(8)-192.168.10.54] - Thread:29###192.168.10.54###LogonManager.logon###begin###null###begin###NA
+[INFO ] 2016-01-12 16:02:14.014 [LogonManager] [RMI TCP Connection(8)-192.168.10.54] - Thread:29###192.168.10.54###UserDAO.getOneTraderById###begin###null###begin###NA
+[INFO ] 2016-01-12 16:02:18.018 [LogonManager] [RMI TCP Connection(8)-192.168.10.54] - Thread:29###192.168.10.54###UserDAO.getOneTraderById###end###null###end###2128ms
+[INFO ] 2016-01-12 16:02:23.023 [LogonRMIImpl] [RMI TCP Connection(8)-192.168.10.54] - Thread:29###192.168.10.54###LogonManager.logon###end###null###end###7346ms
+[INFO ] 2016-01-12 16:02:28.028 [LogonRMIImpl] [RMI TCP Connection(8)-192.168.10.54] - system###192.168.10.54###登陆交易服务器###tpme.PMES.timebargain.server.model.Trader@1ee99d0f[
+  traderID=<null>
+  name=<null>
+  firmID=<null>
+  regWord=<null>
+  password=<null>
+  keyCode=<null>
+  keyStatus=0
+  logonIP=<null>
+  status=0
+  logonTime=0
+  clientToken=<null>
+  ZID=<null>
+]###失败###retCode: -1
+[INFO ] 2016-01-12 16:02:33.033 [LogonRMIImpl] [RMI TCP Connection(8)-192.168.10.54] - Thread:29###192.168.10.54###LogonRMIImpl.logon###end###null###end###17260ms
+[INFO ] 2016-01-12 16:03:46.046 [LogonRMIImpl] [RMI TCP Connection(10)-192.168.10.54] - Thread:31###192.168.10.54###LogonRMIImpl.logon###begin###null###begin###NA
+[INFO ] 2016-01-12 16:04:07.007 [LogonRMIImpl] [RMI TCP Connection(12)-192.168.10.54] - Thread:33###192.168.10.54###LogonRMIImpl.logon###begin###null###begin###NA
+[INFO ] 2016-01-12 16:04:09.009 [LogonRMIImpl] [RMI TCP Connection(12)-192.168.10.54] - system###192.168.10.54###登陆交易服务器###tpme.PMES.timebargain.server.model.Trader@1a15cd9a[
+  traderID=<null>
+  name=<null>
+  firmID=<null>
+  regWord=<null>
+  password=<null>
+  keyCode=<null>
+  keyStatus=0
+  logonIP=<null>
+  status=0
+  logonTime=0
+  clientToken=<null>
+  ZID=<null>
+]###中###NA
+[INFO ] 2016-01-12 16:04:10.010 [LogonRMIImpl] [RMI TCP Connection(10)-192.168.10.54] - system###192.168.10.54###登陆交易服务器###tpme.PMES.timebargain.server.model.Trader@d6d46d7[
+  traderID=<null>
+  name=<null>
+  firmID=<null>
+  regWord=<null>
+  password=<null>
+  keyCode=<null>
+  keyStatus=0
+  logonIP=<null>
+  status=0
+  logonTime=0
+  clientToken=<null>
+  ZID=<null>
+]###中###NA
+[INFO ] 2016-01-12 16:04:11.011 [LogonRMIImpl] [RMI TCP Connection(10)-192.168.10.54] - Thread:31###192.168.10.54###LogonManager.logon###begin###null###begin###NA
+[INFO ] 2016-01-12 16:04:12.012 [LogonRMIImpl] [RMI TCP Connection(12)-192.168.10.54] - Thread:33###192.168.10.54###LogonManager.logon###begin###null###begin###NA
+[INFO ] 2016-01-12 16:04:12.012 [LogonManager] [RMI TCP Connection(12)-192.168.10.54] - Thread:33###192.168.10.54###UserDAO.getOneTraderById###begin###null###begin###NA
+[INFO ] 2016-01-12 16:04:12.012 [LogonManager] [RMI TCP Connection(12)-192.168.10.54] - Thread:33###192.168.10.54###UserDAO.getOneTraderById###end###null###end###3ms
+[INFO ] 2016-01-12 16:04:12.012 [LogonRMIImpl] [RMI TCP Connection(12)-192.168.10.54] - Thread:33###192.168.10.54###LogonManager.logon###end###null###end###3ms
+[INFO ] 2016-01-12 16:04:12.012 [LogonRMIImpl] [RMI TCP Connection(12)-192.168.10.54] - system###192.168.10.54###登陆交易服务器###tpme.PMES.timebargain.server.model.Trader@1a15cd9a[
+  traderID=<null>
+  name=<null>
+  firmID=<null>
+  regWord=<null>
+  password=<null>
+  keyCode=<null>
+  keyStatus=0
+  logonIP=<null>
+  status=0
+  logonTime=0
+  clientToken=<null>
+  ZID=<null>
+]###失败###retCode: -1
+[INFO ] 2016-01-12 16:04:12.012 [LogonRMIImpl] [RMI TCP Connection(12)-192.168.10.54] - Thread:33###192.168.10.54###LogonRMIImpl.logon###end###null###end###4ms
+[INFO ] 2016-01-12 16:04:12.012 [LogonManager] [RMI TCP Connection(10)-192.168.10.54] - Thread:31###192.168.10.54###UserDAO.getOneTraderById###begin###null###begin###NA
+[INFO ] 2016-01-12 16:04:12.012 [LogonManager] [RMI TCP Connection(10)-192.168.10.54] - Thread:31###192.168.10.54###UserDAO.getOneTraderById###end###null###end###3ms
+[INFO ] 2016-01-12 16:04:12.012 [LogonRMIImpl] [RMI TCP Connection(10)-192.168.10.54] - Thread:31###192.168.10.54###LogonManager.logon###end###null###end###3ms
+[INFO ] 2016-01-12 16:04:12.012 [LogonRMIImpl] [RMI TCP Connection(10)-192.168.10.54] - system###192.168.10.54###登陆交易服务器###tpme.PMES.timebargain.server.model.Trader@d6d46d7[
+  traderID=<null>
+  name=<null>
+  firmID=<null>
+  regWord=<null>
+  password=<null>
+  keyCode=<null>
+  keyStatus=0
+  logonIP=<null>
+  status=0
+  logonTime=0
+  clientToken=<null>
+  ZID=<null>
+]###失败###retCode: -1
+[INFO ] 2016-01-12 16:04:12.012 [LogonRMIImpl] [RMI TCP Connection(10)-192.168.10.54] - Thread:31###192.168.10.54###LogonRMIImpl.logon###end###null###end###4ms
+[INFO ] 2016-01-12 16:10:47.047 [ClassPathXmlApplicationContext] [main      ] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7f70888e: display name [org.springframework.context.support.ClassPathXmlApplicationContext@7f70888e]; startup date [Tue Jan 12 16:10:47 CST 2016]; root of context hierarchy
+[INFO ] 2016-01-12 16:10:47.047 [XmlBeanDefinitionReader] [main      ] - Loading XML bean definitions from class path resource [PMES_timebargain.xml]
+[INFO ] 2016-01-12 16:10:47.047 [XmlBeanDefinitionReader] [main      ] - Loading XML bean definitions from class path resource [dataSource.xml]
+[INFO ] 2016-01-12 16:10:47.047 [ClassPathXmlApplicationContext] [main      ] - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@7f70888e]: org.springframework.beans.factory.support.DefaultListableBeanFactory@7ed75415
+[INFO ] 2016-01-12 16:10:48.048 [PropertyPlaceholderConfigurer] [main      ] - Loading properties file from class path resource [appConfig.properties]
+[INFO ] 2016-01-12 16:10:48.048 [DefaultListableBeanFactory] [main      ] - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7ed75415: defining beans [propertyConfigurer,dataSource,auDataSource,config,supperDAO,tradeQueryDAO,userDAO]; root of factory hierarchy
+[INFO ] 2016-01-12 16:10:48.048 [ServerShell] [main      ] - system###192.168.10.54###启动会话服务器###ps1_1###中###NA
+[INFO ] 2016-01-12 16:10:48.048 [ServerShell] [main      ] - system###192.168.10.54###读取RMI配置信息###ps1_1###中###NA
+[INFO ] 2016-01-12 16:10:49.049 [ServerShell] [main      ] - system###192.168.10.54###读取RMI配置信息###ps1_1###成功###NA
+[INFO ] 2016-01-12 16:10:49.049 [ServerShell] [main      ] - system###192.168.10.54###获取RMI配置###rmi://127.0.0.1:17003/LogonRMI###成功###NA
+[INFO ] 2016-01-12 16:10:49.049 [ServerShell] [main      ] - system###192.168.10.54###同步RMI配置###rmi://127.0.0.1:17005/SyncRMI###成功###NA
+[ERROR] 2016-01-12 16:10:50.050 [SyncServer] [main      ] - system###192.168.10.54###查找对端同步的RMI###NA###失败java.rmi.ConnectException: Connection refused to host: 127.0.0.1; nested exception is: 
+	java.net.ConnectException: Connection refused: connect###NA
+[INFO ] 2016-01-12 16:10:50.050 [ServerShell] [main      ] - system###192.168.10.54###启动会话服务器###ps1_1###中###NA
+[INFO ] 2016-01-12 16:11:00.000 [ServerShell] [main      ] - system###192.168.10.54###RMI启动服务###ps1_1###成功###NA
+[INFO ] 2016-01-12 16:11:17.017 [LogonRMIImpl] [RMI TCP Connection(4)-192.168.10.54] - Thread:27###192.168.10.54###LogonRMIImpl.logon###begin###null###begin###NA
+[INFO ] 2016-01-12 16:11:17.017 [LogonRMIImpl] [RMI TCP Connection(4)-192.168.10.54] - system###192.168.10.54###登陆交易服务器###tpme.PMES.timebargain.server.model.Trader@20edbca8[
+  traderID=<null>
+  name=<null>
+  firmID=<null>
+  regWord=<null>
+  password=<null>
+  keyCode=<null>
+  keyStatus=0
+  logonIP=<null>
+  status=0
+  logonTime=0
+  clientToken=<null>
+  ZID=<null>
+]###中###NA
+[INFO ] 2016-01-12 16:11:17.017 [LogonRMIImpl] [RMI TCP Connection(4)-192.168.10.54] - Thread:27###192.168.10.54###LogonManager.logon###begin###null###begin###NA
+[INFO ] 2016-01-12 16:11:18.018 [LogonManager] [RMI TCP Connection(4)-192.168.10.54] - Thread:27###192.168.10.54###UserDAO.getOneTraderById###begin###null###begin###NA
+[INFO ] 2016-01-12 16:11:18.018 [LogonManager] [RMI TCP Connection(4)-192.168.10.54] - Thread:27###192.168.10.54###UserDAO.getOneTraderById###end###null###end###634ms
+[INFO ] 2016-01-12 16:11:18.018 [LogonRMIImpl] [RMI TCP Connection(4)-192.168.10.54] - Thread:27###192.168.10.54###LogonManager.logon###end###null###end###1143ms
+[INFO ] 2016-01-12 16:11:18.018 [LogonRMIImpl] [RMI TCP Connection(4)-192.168.10.54] - system###192.168.10.54###登陆交易服务器###tpme.PMES.timebargain.server.model.Trader@20edbca8[
+  traderID=<null>
+  name=<null>
+  firmID=<null>
+  regWord=<null>
+  password=<null>
+  keyCode=<null>
+  keyStatus=0
+  logonIP=<null>
+  status=0
+  logonTime=0
+  clientToken=<null>
+  ZID=<null>
+]###失败###retCode: -1
+[INFO ] 2016-01-12 16:11:18.018 [LogonRMIImpl] [RMI TCP Connection(4)-192.168.10.54] - Thread:27###192.168.10.54###LogonRMIImpl.logon###end###null###end###3004ms
+[INFO ] 2016-01-12 16:11:43.043 [LogonRMIImpl] [RMI TCP Connection(6)-192.168.10.54] - Thread:24###192.168.10.54###LogonRMIImpl.logon###begin###null###begin###NA
+[INFO ] 2016-01-12 16:11:43.043 [LogonRMIImpl] [RMI TCP Connection(6)-192.168.10.54] - system###192.168.10.54###登陆交易服务器###tpme.PMES.timebargain.server.model.Trader@7d9ccb73[
+  traderID=<null>
+  name=<null>
+  firmID=<null>
+  regWord=<null>
+  password=<null>
+  keyCode=<null>
+  keyStatus=0
+  logonIP=<null>
+  status=0
+  logonTime=0
+  clientToken=<null>
+  ZID=<null>
+]###中###NA
+[INFO ] 2016-01-12 16:11:44.044 [LogonRMIImpl] [RMI TCP Connection(6)-192.168.10.54] - Thread:24###192.168.10.54###LogonManager.logon###begin###null###begin###NA
+[INFO ] 2016-01-12 16:11:46.046 [LogonManager] [RMI TCP Connection(6)-192.168.10.54] - Thread:24###192.168.10.54###UserDAO.getOneTraderById###begin###null###begin###NA
+[INFO ] 2016-01-12 16:11:46.046 [LogonManager] [RMI TCP Connection(6)-192.168.10.54] - Thread:24###192.168.10.54###UserDAO.getOneTraderById###end###null###end###1382ms
+[INFO ] 2016-01-12 16:11:46.046 [LogonRMIImpl] [RMI TCP Connection(6)-192.168.10.54] - Thread:24###192.168.10.54###LogonManager.logon###end###null###end###2826ms
+[INFO ] 2016-01-12 16:11:46.046 [LogonRMIImpl] [RMI TCP Connection(6)-192.168.10.54] - system###192.168.10.54###登陆交易服务器###tpme.PMES.timebargain.server.model.Trader@7d9ccb73[
+  traderID=<null>
+  name=<null>
+  firmID=<null>
+  regWord=<null>
+  password=<null>
+  keyCode=<null>
+  keyStatus=0
+  logonIP=<null>
+  status=0
+  logonTime=0
+  clientToken=<null>
+  ZID=<null>
+]###失败###retCode: -1
+[INFO ] 2016-01-12 16:11:46.046 [LogonRMIImpl] [RMI TCP Connection(6)-192.168.10.54] - Thread:24###192.168.10.54###LogonRMIImpl.logon###end###null###end###4352ms
+[INFO ] 2016-01-12 16:12:48.048 [LogonRMIImpl] [RMI TCP Connection(8)-192.168.10.54] - Thread:21###192.168.10.54###LogonRMIImpl.logon###begin###null###begin###NA
+[INFO ] 2016-01-12 16:12:48.048 [LogonRMIImpl] [RMI TCP Connection(8)-192.168.10.54] - system###192.168.10.54###登陆交易服务器###tpme.PMES.timebargain.server.model.Trader@f1a47df[
+  traderID=<null>
+  name=<null>
+  firmID=<null>
+  regWord=<null>
+  password=<null>
+  keyCode=<null>
+  keyStatus=0
+  logonIP=<null>
+  status=0
+  logonTime=0
+  clientToken=<null>
+  ZID=<null>
+]###中###NA
+[INFO ] 2016-01-12 16:12:48.048 [LogonRMIImpl] [RMI TCP Connection(8)-192.168.10.54] - Thread:21###192.168.10.54###LogonManager.logon###begin###null###begin###NA
+[INFO ] 2016-01-12 16:12:48.048 [LogonManager] [RMI TCP Connection(8)-192.168.10.54] - Thread:21###192.168.10.54###UserDAO.getOneTraderById###begin###null###begin###NA
+[INFO ] 2016-01-12 16:12:48.048 [LogonManager] [RMI TCP Connection(8)-192.168.10.54] - Thread:21###192.168.10.54###UserDAO.getOneTraderById###end###null###end###3ms
+[INFO ] 2016-01-12 16:12:48.048 [LogonRMIImpl] [RMI TCP Connection(8)-192.168.10.54] - Thread:21###192.168.10.54###LogonManager.logon###end###null###end###3ms
+[INFO ] 2016-01-12 16:12:48.048 [LogonRMIImpl] [RMI TCP Connection(8)-192.168.10.54] - system###192.168.10.54###登陆交易服务器###tpme.PMES.timebargain.server.model.Trader@f1a47df[
+  traderID=<null>
+  name=<null>
+  firmID=<null>
+  regWord=<null>
+  password=<null>
+  keyCode=<null>
+  keyStatus=0
+  logonIP=<null>
+  status=0
+  logonTime=0
+  clientToken=<null>
+  ZID=<null>
+]###失败###retCode: -1
+[INFO ] 2016-01-12 16:12:48.048 [LogonRMIImpl] [RMI TCP Connection(8)-192.168.10.54] - Thread:21###192.168.10.54###LogonRMIImpl.logon###end###null###end###4ms
+[INFO ] 2016-01-12 16:28:32.032 [ClassPathXmlApplicationContext] [main      ] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@2c19e15c: display name [org.springframework.context.support.ClassPathXmlApplicationContext@2c19e15c]; startup date [Tue Jan 12 16:28:32 CST 2016]; root of context hierarchy
+[INFO ] 2016-01-12 16:28:32.032 [XmlBeanDefinitionReader] [main      ] - Loading XML bean definitions from class path resource [PMES_timebargain.xml]
+[INFO ] 2016-01-12 16:28:32.032 [XmlBeanDefinitionReader] [main      ] - Loading XML bean definitions from class path resource [dataSource.xml]
+[INFO ] 2016-01-12 16:28:32.032 [ClassPathXmlApplicationContext] [main      ] - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@2c19e15c]: org.springframework.beans.factory.support.DefaultListableBeanFactory@54c01e99
+[INFO ] 2016-01-12 16:28:32.032 [PropertyPlaceholderConfigurer] [main      ] - Loading properties file from class path resource [appConfig.properties]
+[INFO ] 2016-01-12 16:28:32.032 [DefaultListableBeanFactory] [main      ] - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@54c01e99: defining beans [propertyConfigurer,dataSource,auDataSource,config,supperDAO,tradeQueryDAO,userDAO]; root of factory hierarchy
+[INFO ] 2016-01-12 16:28:32.032 [ServerShell] [main      ] - system###192.168.10.54###启动会话服务器###ps1_1###中###NA
+[INFO ] 2016-01-12 16:28:32.032 [ServerShell] [main      ] - system###192.168.10.54###读取RMI配置信息###ps1_1###中###NA
+[INFO ] 2016-01-12 16:28:33.033 [ServerShell] [main      ] - system###192.168.10.54###读取RMI配置信息###ps1_1###成功###NA
+[INFO ] 2016-01-12 16:28:33.033 [ServerShell] [main      ] - system###192.168.10.54###获取RMI配置###rmi://127.0.0.1:17003/LogonRMI###成功###NA
+[INFO ] 2016-01-12 16:28:33.033 [ServerShell] [main      ] - system###192.168.10.54###同步RMI配置###rmi://127.0.0.1:17005/SyncRMI###成功###NA
+[ERROR] 2016-01-12 16:28:34.034 [SyncServer] [main      ] - system###192.168.10.54###查找对端同步的RMI###NA###失败java.rmi.ConnectException: Connection refused to host: 127.0.0.1; nested exception is: 
+	java.net.ConnectException: Connection refused: connect###NA
+[INFO ] 2016-01-12 16:28:34.034 [ServerShell] [main      ] - system###192.168.10.54###启动会话服务器###ps1_1###中###NA
+[INFO ] 2016-01-12 16:28:44.044 [ServerShell] [main      ] - system###192.168.10.54###RMI启动服务###ps1_1###成功###NA
+[INFO ] 2016-01-12 16:28:47.047 [LogonRMIImpl] [RMI TCP Connection(4)-192.168.10.54] - Thread:27###192.168.10.54###LogonRMIImpl.logon###begin###null###begin###NA
+[INFO ] 2016-01-12 16:28:47.047 [LogonRMIImpl] [RMI TCP Connection(4)-192.168.10.54] - system###192.168.10.54###登陆交易服务器###tpme.PMES.timebargain.server.model.Trader@caa559d[
+  traderID=<null>
+  name=<null>
+  firmID=<null>
+  regWord=<null>
+  password=<null>
+  keyCode=<null>
+  keyStatus=0
+  logonIP=<null>
+  status=0
+  logonTime=0
+  clientToken=<null>
+  ZID=<null>
+]###中###NA
+[INFO ] 2016-01-12 16:28:47.047 [LogonRMIImpl] [RMI TCP Connection(4)-192.168.10.54] - Thread:27###192.168.10.54###LogonManager.logon###begin###null###begin###NA
+[INFO ] 2016-01-12 16:28:47.047 [LogonManager] [RMI TCP Connection(4)-192.168.10.54] - Thread:27###192.168.10.54###UserDAO.getOneTraderById###begin###null###begin###NA
+[INFO ] 2016-01-12 16:28:47.047 [LogonManager] [RMI TCP Connection(4)-192.168.10.54] - Thread:27###192.168.10.54###UserDAO.getOneTraderById###end###null###end###4ms
+[INFO ] 2016-01-12 16:28:47.047 [LogonRMIImpl] [RMI TCP Connection(4)-192.168.10.54] - Thread:27###192.168.10.54###LogonManager.logon###end###null###end###6ms
+[INFO ] 2016-01-12 16:28:47.047 [LogonRMIImpl] [RMI TCP Connection(4)-192.168.10.54] - system###192.168.10.54###登陆交易服务器###tpme.PMES.timebargain.server.model.Trader@caa559d[
+  traderID=<null>
+  name=<null>
+  firmID=<null>
+  regWord=<null>
+  password=<null>
+  keyCode=<null>
+  keyStatus=0
+  logonIP=<null>
+  status=0
+  logonTime=0
+  clientToken=<null>
+  ZID=<null>
+]###失败###retCode: -1
+[INFO ] 2016-01-12 16:28:47.047 [LogonRMIImpl] [RMI TCP Connection(4)-192.168.10.54] - Thread:27###192.168.10.54###LogonRMIImpl.logon###end###null###end###25ms
+[INFO ] 2016-01-12 16:36:06.006 [LogonRMIImpl] [RMI TCP Connection(7)-192.168.10.54] - Thread:30###192.168.10.54###LogonRMIImpl.logon###begin###null###begin###NA
+[INFO ] 2016-01-12 16:36:32.032 [LogonRMIImpl] [RMI TCP Connection(7)-192.168.10.54] - system###192.168.10.54###登陆交易服务器###tpme.PMES.timebargain.server.model.Trader@47ed081[
+  traderID=<null>
+  name=<null>
+  firmID=<null>
+  regWord=<null>
+  password=<null>
+  keyCode=<null>
+  keyStatus=0
+  logonIP=<null>
+  status=0
+  logonTime=0
+  clientToken=<null>
+  ZID=<null>
+]###中###NA
+[INFO ] 2016-01-12 16:36:32.032 [LogonRMIImpl] [RMI TCP Connection(7)-192.168.10.54] - Thread:30###192.168.10.54###LogonManager.logon###begin###null###begin###NA
+[INFO ] 2016-01-12 16:36:56.056 [LogonManager] [RMI TCP Connection(7)-192.168.10.54] - Thread:30###192.168.10.54###UserDAO.getOneTraderById###begin###null###begin###NA
+[INFO ] 2016-01-12 16:36:59.059 [LogonManager] [RMI TCP Connection(7)-192.168.10.54] - Thread:30###192.168.10.54###UserDAO.getOneTraderById###end###null###end###542ms
+[INFO ] 2016-01-12 16:37:00.000 [LogonRMIImpl] [RMI TCP Connection(7)-192.168.10.54] - Thread:30###192.168.10.54###LogonManager.logon###end###null###end###3411ms
+[INFO ] 2016-01-12 16:37:00.000 [LogonRMIImpl] [RMI TCP Connection(7)-192.168.10.54] - system###192.168.10.54###登陆交易服务器###tpme.PMES.timebargain.server.model.Trader@47ed081[
+  traderID=<null>
+  name=<null>
+  firmID=<null>
+  regWord=<null>
+  password=<null>
+  keyCode=<null>
+  keyStatus=0
+  logonIP=<null>
+  status=0
+  logonTime=0
+  clientToken=<null>
+  ZID=<null>
+]###失败###retCode: -1
+[INFO ] 2016-01-12 16:37:00.000 [LogonRMIImpl] [RMI TCP Connection(7)-192.168.10.54] - Thread:30###192.168.10.54###LogonRMIImpl.logon###end###null###end###45664ms
+[INFO ] 2016-01-12 16:40:26.026 [LogonRMIImpl] [RMI TCP Connection(10)-192.168.10.54] - Thread:33###192.168.10.54###LogonRMIImpl.logon###begin###null###begin###NA
+[INFO ] 2016-01-12 16:40:26.026 [LogonRMIImpl] [RMI TCP Connection(10)-192.168.10.54] - system###192.168.10.54###登陆交易服务器###tpme.PMES.timebargain.server.model.Trader@2398dc19[
+  traderID=<null>
+  name=<null>
+  firmID=<null>
+  regWord=<null>
+  password=<null>
+  keyCode=<null>
+  keyStatus=0
+  logonIP=<null>
+  status=0
+  logonTime=0
+  clientToken=<null>
+  ZID=<null>
+]###中###NA
+[INFO ] 2016-01-12 16:40:26.026 [LogonRMIImpl] [RMI TCP Connection(10)-192.168.10.54] - Thread:33###192.168.10.54###LogonManager.logon###begin###null###begin###NA
+[INFO ] 2016-01-12 16:40:26.026 [LogonManager] [RMI TCP Connection(10)-192.168.10.54] - Thread:33###192.168.10.54###UserDAO.getOneTraderById###begin###null###begin###NA
+[INFO ] 2016-01-12 16:40:26.026 [LogonManager] [RMI TCP Connection(10)-192.168.10.54] - Thread:33###192.168.10.54###UserDAO.getOneTraderById###end###null###end###3ms
+[INFO ] 2016-01-12 16:40:26.026 [LogonRMIImpl] [RMI TCP Connection(10)-192.168.10.54] - Thread:33###192.168.10.54###LogonManager.logon###end###null###end###4ms
+[INFO ] 2016-01-12 16:40:26.026 [LogonRMIImpl] [RMI TCP Connection(10)-192.168.10.54] - system###192.168.10.54###登陆交易服务器###tpme.PMES.timebargain.server.model.Trader@2398dc19[
+  traderID=<null>
+  name=<null>
+  firmID=<null>
+  regWord=<null>
+  password=<null>
+  keyCode=<null>
+  keyStatus=0
+  logonIP=<null>
+  status=0
+  logonTime=0
+  clientToken=<null>
+  ZID=<null>
+]###失败###retCode: -1
+[INFO ] 2016-01-12 16:40:26.026 [LogonRMIImpl] [RMI TCP Connection(10)-192.168.10.54] - Thread:33###192.168.10.54###LogonRMIImpl.logon###end###null###end###5ms
+[INFO ] 2016-01-12 16:40:29.029 [LogonRMIImpl] [RMI TCP Connection(12)-192.168.10.54] - Thread:32###192.168.10.54###LogonRMIImpl.logon###begin###null###begin###NA
+[INFO ] 2016-01-12 16:40:29.029 [LogonRMIImpl] [RMI TCP Connection(12)-192.168.10.54] - system###192.168.10.54###登陆交易服务器###tpme.PMES.timebargain.server.model.Trader@3739491b[
+  traderID=<null>
+  name=<null>
+  firmID=<null>
+  regWord=<null>
+  password=<null>
+  keyCode=<null>
+  keyStatus=0
+  logonIP=<null>
+  status=0
+  logonTime=0
+  clientToken=<null>
+  ZID=<null>
+]###中###NA
+[INFO ] 2016-01-12 16:40:29.029 [LogonRMIImpl] [RMI TCP Connection(12)-192.168.10.54] - Thread:32###192.168.10.54###LogonManager.logon###begin###null###begin###NA
+[INFO ] 2016-01-12 16:40:29.029 [LogonManager] [RMI TCP Connection(12)-192.168.10.54] - Thread:32###192.168.10.54###UserDAO.getOneTraderById###begin###null###begin###NA
+[INFO ] 2016-01-12 16:40:29.029 [LogonManager] [RMI TCP Connection(12)-192.168.10.54] - Thread:32###192.168.10.54###UserDAO.getOneTraderById###end###null###end###2ms
+[INFO ] 2016-01-12 16:40:29.029 [LogonRMIImpl] [RMI TCP Connection(12)-192.168.10.54] - Thread:32###192.168.10.54###LogonManager.logon###end###null###end###3ms
+[INFO ] 2016-01-12 16:40:29.029 [LogonRMIImpl] [RMI TCP Connection(12)-192.168.10.54] - system###192.168.10.54###登陆交易服务器###tpme.PMES.timebargain.server.model.Trader@3739491b[
+  traderID=<null>
+  name=<null>
+  firmID=<null>
+  regWord=<null>
+  password=<null>
+  keyCode=<null>
+  keyStatus=0
+  logonIP=<null>
+  status=0
+  logonTime=0
+  clientToken=<null>
+  ZID=<null>
+]###失败###retCode: -1
+[INFO ] 2016-01-12 16:40:29.029 [LogonRMIImpl] [RMI TCP Connection(12)-192.168.10.54] - Thread:32###192.168.10.54###LogonRMIImpl.logon###end###null###end###4ms
+[INFO ] 2016-01-12 16:40:32.032 [LogonRMIImpl] [RMI TCP Connection(14)-192.168.10.54] - Thread:32###192.168.10.54###LogonRMIImpl.logon###begin###null###begin###NA
+[INFO ] 2016-01-12 16:40:32.032 [LogonRMIImpl] [RMI TCP Connection(14)-192.168.10.54] - system###192.168.10.54###登陆交易服务器###tpme.PMES.timebargain.server.model.Trader@7102be12[
+  traderID=<null>
+  name=<null>
+  firmID=<null>
+  regWord=<null>
+  password=<null>
+  keyCode=<null>
+  keyStatus=0
+  logonIP=<null>
+  status=0
+  logonTime=0
+  clientToken=<null>
+  ZID=<null>
+]###中###NA
+[INFO ] 2016-01-12 16:40:32.032 [LogonRMIImpl] [RMI TCP Connection(14)-192.168.10.54] - Thread:32###192.168.10.54###LogonManager.logon###begin###null###begin###NA
+[INFO ] 2016-01-12 16:40:32.032 [LogonManager] [RMI TCP Connection(14)-192.168.10.54] - Thread:32###192.168.10.54###UserDAO.getOneTraderById###begin###null###begin###NA
+[INFO ] 2016-01-12 16:40:32.032 [LogonManager] [RMI TCP Connection(14)-192.168.10.54] - Thread:32###192.168.10.54###UserDAO.getOneTraderById###end###null###end###2ms
+[INFO ] 2016-01-12 16:40:32.032 [LogonRMIImpl] [RMI TCP Connection(14)-192.168.10.54] - Thread:32###192.168.10.54###LogonManager.logon###end###null###end###2ms
+[INFO ] 2016-01-12 16:40:32.032 [LogonRMIImpl] [RMI TCP Connection(14)-192.168.10.54] - system###192.168.10.54###登陆交易服务器###tpme.PMES.timebargain.server.model.Trader@7102be12[
+  traderID=<null>
+  name=<null>
+  firmID=<null>
+  regWord=<null>
+  password=<null>
+  keyCode=<null>
+  keyStatus=0
+  logonIP=<null>
+  status=0
+  logonTime=0
+  clientToken=<null>
+  ZID=<null>
+]###失败###retCode: -1
+[INFO ] 2016-01-12 16:40:32.032 [LogonRMIImpl] [RMI TCP Connection(14)-192.168.10.54] - Thread:32###192.168.10.54###LogonRMIImpl.logon###end###null###end###4ms

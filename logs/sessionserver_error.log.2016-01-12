@@ -1,0 +1,12 @@
+[ERROR] 2016-01-12 11:19:00.000 [SyncServer] [main      ] - system###172.31.100.71###查找对端同步的RMI###NA###失败java.rmi.ConnectException: Connection refused to host: 127.0.0.1; nested exception is: 
+	java.net.ConnectException: Connection refused: connect###NA
+[ERROR] 2016-01-12 15:46:11.011 [SyncServer] [main      ] - system###192.168.10.54###查找对端同步的RMI###NA###失败java.rmi.ConnectException: Connection refused to host: 127.0.0.1; nested exception is: 
+	java.net.ConnectException: Connection refused: connect###NA
+[ERROR] 2016-01-12 15:46:12.012 [ServerShell] [main      ] - system###192.168.10.54###RMI启动服务###ps1_1###失败java.rmi.server.ExportException: Port already in use: 0; nested exception is: 
+	java.net.BindException: Address already in use: JVM_Bind###NA
+[ERROR] 2016-01-12 15:58:53.053 [SyncServer] [main      ] - system###192.168.10.54###查找对端同步的RMI###NA###失败java.rmi.ConnectException: Connection refused to host: 127.0.0.1; nested exception is: 
+	java.net.ConnectException: Connection refused: connect###NA
+[ERROR] 2016-01-12 16:10:50.050 [SyncServer] [main      ] - system###192.168.10.54###查找对端同步的RMI###NA###失败java.rmi.ConnectException: Connection refused to host: 127.0.0.1; nested exception is: 
+	java.net.ConnectException: Connection refused: connect###NA
+[ERROR] 2016-01-12 16:28:34.034 [SyncServer] [main      ] - system###192.168.10.54###查找对端同步的RMI###NA###失败java.rmi.ConnectException: Connection refused to host: 127.0.0.1; nested exception is: 
+	java.net.ConnectException: Connection refused: connect###NA

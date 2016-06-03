@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+    "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+	<!-- 数据库连接池  for 交易  -->
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+		<property name="driverClassName">
+			<value>oracle.jdbc.driver.OracleDriver</value>
+		</property>
+		<property name="url">
+			<value>${sessionserver.tradedb.url}</value>
+		</property>
+		<property name="username">
+			<value>${sessionserver.tradedb.username}</value>
+		</property>
+		<property name="password">
+			<value>${sessionserver.tradedb.password}</value>
+		</property>
+		<property name="maxActive">
+			<value>2000</value>
+		</property>
+		<property name="maxWait">
+			<value>30000</value>
+		</property>
+		<property name="maxIdle">
+			<value>50</value>
+		</property>
+		<property name="testOnBorrow">
+			<value>true</value>
+		</property>
+		<property name="validationQuery">
+			<value>select 1 from dual</value>
+		</property>
+	</bean>
+	
+	<!-- 数据库连接池  for AU-->
+
+	<bean id="auDataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+		<property name="driverClassName">
+			<value>oracle.jdbc.driver.OracleDriver</value>
+		</property>
+		<property name="url">
+			<value>${sessionserver.masterdb.url}</value>
+		</property>
+		<property name="username">
+			<value>${sessionserver.masterdb.username}</value>
+		</property>
+		<property name="password">
+			<value>${sessionserver.masterdb.password}</value>
+		</property>
+		<property name="maxActive">
+			<value>2000</value>
+		</property>
+		<property name="maxWait">
+			<value>30000</value>
+		</property>
+		<property name="maxIdle">
+			<value>50</value>
+		</property>
+		<property name="testOnBorrow">
+			<value>true</value>
+		</property>
+		<property name="validationQuery">
+			<value>select 1 from dual</value>
+		</property>
+	</bean>
+
+</beans>
+
+
+
+
+
+
+
+
+
+
+

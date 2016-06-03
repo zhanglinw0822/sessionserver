@@ -1,0 +1,7 @@
+[INFO ] 2016-01-13 14:40:00.000 [audit] [RMI TCP Connection(4)-192.168.10.54] - 111
+[INFO ] 2016-01-13 14:41:43.043 [LogonRMIImpl] [RMI TCP Connection(4)-192.168.10.54] - Thread:27###192.168.10.54###LogonRMIImpl.logon###begin###null###begin###NA
+[INFO ] 2016-01-13 14:41:43.043 [LogonRMIImpl] [RMI TCP Connection(4)-192.168.10.54] - Thread:27###192.168.10.54###LogonManager.logon###begin###null###begin###NA
+[INFO ] 2016-01-13 14:41:43.043 [LogonManager] [RMI TCP Connection(4)-192.168.10.54] - Thread:27###192.168.10.54###UserDAO.getOneTraderById###begin###null###begin###NA
+[INFO ] 2016-01-13 14:41:54.054 [LogonManager] [RMI TCP Connection(4)-192.168.10.54] - Thread:27###192.168.10.54###UserDAO.getOneTraderById###end###null###end###11827ms
+[INFO ] 2016-01-13 14:41:57.057 [LogonRMIImpl] [RMI TCP Connection(4)-192.168.10.54] - Thread:27###192.168.10.54###LogonManager.logon###end###null###end###13893ms
+[INFO ] 2016-01-13 14:41:57.057 [LogonRMIImpl] [RMI TCP Connection(4)-192.168.10.54] - Thread:27###192.168.10.54###LogonRMIImpl.logon###end###null###end###13920ms

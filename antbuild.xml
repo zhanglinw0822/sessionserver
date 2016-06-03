@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="sessionserver" basedir="." default="dist">
+	<!--define properties-->
+    <taskdef resource="net/sf/antcontrib/antlib.xml"/>
+    <tstamp>
+        <format property="nowstamp" pattern="yyyyMMdd_HHmm" locale="en" />
+    </tstamp>
+
+    <property name="project.name" value="sessionserver" />
+    <property name="project.rmi.name" value="riskcontrolrmi" />
+    <property name="project.build" value="build" />
+    <property name="project.dist" value="dist" />
+    <property name="project.lib" value="libs" />
+    <property name="project.src.java" value="src" />
+    <property name="build.classes" value="${project.build}/classes" />
+    <property name="ant.project" value="antproject" />
+    <property name="project.deps.name" value="basicplatform,sessionrmi" />
+
+	<!--define classPath-->
+    <path id="classpath">
+        <fileset dir="${project.lib}" includes="**/*.jar" />
+    </path>
+
+
+    <target name="echo">
+        <echo>
+   
+            生成 ${project.name}
+            ----------------------------------------------------------------------
+   
+        </echo>
+    </target>
+
+	<!--清理-->
+    <target name="clean" depends="echo">
+        <delete dir="${project.build}" />
+        <delete dir="${project.dist}" />
+    </target>
+
+
+	<!--init-->
+    <target name="init"  depends="clean">
+        <mkdir dir="${project.build}" />
+        <mkdir dir="${project.dist}" />
+        <for list="${project.deps.name}" delimiter="," param="sbprj">
+            <sequential>
+                <copy todir="${project.lib}" overwrite="true">
+                    <fileset dir="../@{sbprj}/dist">
+                        <include name="*.jar" />
+                    </fileset>
+                </copy>
+            </sequential>
+        </for>
+    </target>
+    
+    <!-- check style -->
+    <taskdef resource="checkstyletask.properties"/>
+    <target name="checkstyle"  depends="clean, init">
+        <checkstyle config="${ant.project}/codestyle.xml"  failureProperty="checkstyle.failure"  failOnViolation="false">
+            <formatter type="xml" tofile="${project.build}/checkstyle_report_${project.name}.xml"/>
+            <fileset dir="${project.src.java}" includes="**/*.java"/>
+        </checkstyle>
+        <!-- 生成报告 -->
+        <style in="${project.build}/checkstyle_report_${project.name}.xml" out="${project.build}/checkstyle_report_${project.name}.html" style="${ant.project}/checkstyle-noframes-sorted.xsl"/>
+        <zip destfile="${project.dist}/checkstyle_report_${project.name}.zip"  basedir="${project.build}" includes="**/checkstyle*.*"/>
+    </target>
+
+	<!--compile project -->
+    <target name="compile" depends="clean, init, checkstyle">
+        <mkdir dir="${build.classes}" />
+        <javac destdir="${build.classes}" includeAntRuntime="no" debug="on"  source="1.5"  target="1.5" encoding="GBK">
+            <classpath>
+                <path refid="classpath"/>
+            </classpath>
+            <src path="${project.src.java}"/>
+            <include name="*/**" />
+        </javac>
+		
+        <copy todir="${build.classes}">
+            <fileset dir="${project.src.java}">
+                <exclude name="**/*.java" />
+            </fileset>
+        </copy>
+    </target>
+
+
+
+
+
+    <target name="dist" depends="compile">
+        <mkdir dir="${project.dist}/libs"/>
+        <copy todir="${project.dist}/libs">
+            <fileset dir="${project.lib}">
+                <include name="**/*.jar" />
+            </fileset>
+        </copy>
+        <zip destfile="${project.dist}/libs/${project.name}.jar"  basedir="${build.classes}" includes="**/*"/>
+
+        <copy todir="${project.dist}">
+            <fileset dir="run">
+                <include name="**/*.*" />
+            </fileset>
+        </copy>
+        <copy todir="${project.dist}">
+            <fileset dir="src">
+                <exclude name="*.java" />
+                <include name="*.*" />
+            </fileset>
+        </copy>
+    </target>
+
+
+
+</project>

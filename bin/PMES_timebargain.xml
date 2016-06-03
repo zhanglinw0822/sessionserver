@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+    "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location">
+			<value>appConfig.properties</value>
+		</property>
+	</bean>
+	
+	<import resource="dataSource.xml"/>
+
+	<bean id="config" class="java.util.Properties">
+		<constructor-arg type="java.util.Properties">
+			<props>
+				<prop key="ServerName">${sessionserver.system.serverName}</prop>	<!-- 机器名； -->
+				<prop key="ExpireTime">5</prop>	<!-- session过期时间； -->
+				<prop key="MultiMode">1</prop>	<!-- 单例多例模式； -->
+				<prop key="ValidCodeExpireTime">120000</prop>	<!-- 验证码过期时间,毫秒单位； -->
+			</props>
+		</constructor-arg>
+	</bean>	
+
+	<bean id="supperDAO" class="tpme.PMES.timebargain.server.dao.SupperDAO">
+		<property name="dataSource" ref="dataSource"/>
+	</bean>
+	
+	<bean id="tradeQueryDAO" class="tpme.PMES.timebargain.server.dao.jdbc.TradeQueryDAOImpl">
+		<property name="dataSource" ref="dataSource"/>
+	</bean> 
+	
+	<bean id="userDAO" class="tpme.PMES.timebargain.server.dao.jdbc.UserDAOImpl">
+		<property name="dataSource" ref="auDataSource"/>
+	</bean>
+</beans>

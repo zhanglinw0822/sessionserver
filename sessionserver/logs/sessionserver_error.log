@@ -1,0 +1,4 @@
+[ERROR] 2016-01-13 14:39:09.009 [SyncServer] [main      ] - system###192.168.10.54###查找对端同步的RMI###NA###失败java.rmi.ConnectException: Connection refused to host: 127.0.0.1; nested exception is: 
+	java.net.ConnectException: Connection refused: connect###NA
+[ERROR] 2016-01-13 14:41:19.019 [SyncServer] [main      ] - system###192.168.10.54###查找对端同步的RMI###NA###失败java.rmi.ConnectException: Connection refused to host: 127.0.0.1; nested exception is: 
+	java.net.ConnectException: Connection refused: connect###NA

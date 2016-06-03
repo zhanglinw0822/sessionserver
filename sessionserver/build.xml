@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="${env.JOB_NAME}" default="build" basedir=".">
+	<property environment="env" />
+	<property name="src" value="src" />
+	<property name="template" value="bulidtemplate" />
+	<property name="libs" value="libs" />
+	<property name="dest" value="bin" />
+	<property name="destjar" value="${env.JOB_NAME}" />
+
+
+	<path id="classpath">
+		<fileset dir="${libs}" includes="**/*.jar" />
+	</path>
+
+	<target name="clean">
+		<delete dir="${dest}" />
+		<delete dir="${destjar}" />
+	</target>
+	<target name="init" depends="clean">
+		<mkdir dir="${dest}" />
+		<mkdir dir="${destjar}" />
+		<copy todir="${destjar}">
+			<fileset dir="${template}" />
+		</copy>
+	</target>
+
+	<target name="compile" depends="init">
+		<javac srcdir="${src}" destdir="${dest}" encoding="GBK" excludes="**/test/*">
+			<compilerarg line="-g:source,lines,vars" />
+			<classpath>
+				<path refid="classpath">
+				</path>
+			</classpath>
+		</javac>
+	</target>
+
+	<target name="jar" depends="compile">
+		<jar jarfile="${destjar}/libs/${env.JOB_NAME}_SVN${env.SVN_REVISION}_B${env.BUILD_NUMBER}.jar" basedir="${dest}" />
+	</target>
+
+	<target name="build" depends="jar">
+		<copy todir="${destjar}/libs">
+			<fileset dir="${libs}" includes="**/*.jar" />
+		</copy>
+
+		<copy todir="${destjar}">
+			<fileset file="${src}/log4j.properties"></fileset>
+			<fileset file="${src}/dataSource.xml"></fileset>
+			<fileset file="${src}/PMES_timebargain.xml"></fileset>
+		</copy>
+
+		<zip destfile="${destjar}/${env.JOB_NAME}_SVN${env.SVN_REVISION}_B${env.BUILD_NUMBER}.zip">
+			<fileset dir="${destjar}" />
+		</zip>
+
+		<delete dir="${destjar}" excludes="**/*.zip" includeemptydirs="true" />
+	</target>
+</project>

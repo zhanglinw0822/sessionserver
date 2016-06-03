@@ -1,0 +1,93 @@
+[INFO ] 2016-01-13 14:39:03.003 [ClassPathXmlApplicationContext] [main      ] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@571a75a2: display name [org.springframework.context.support.ClassPathXmlApplicationContext@571a75a2]; startup date [Wed Jan 13 14:39:03 CST 2016]; root of context hierarchy
+[INFO ] 2016-01-13 14:39:03.003 [XmlBeanDefinitionReader] [main      ] - Loading XML bean definitions from class path resource [PMES_timebargain.xml]
+[INFO ] 2016-01-13 14:39:04.004 [XmlBeanDefinitionReader] [main      ] - Loading XML bean definitions from class path resource [dataSource.xml]
+[INFO ] 2016-01-13 14:39:04.004 [ClassPathXmlApplicationContext] [main      ] - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@571a75a2]: org.springframework.beans.factory.support.DefaultListableBeanFactory@54c01e99
+[INFO ] 2016-01-13 14:39:04.004 [PropertyPlaceholderConfigurer] [main      ] - Loading properties file from class path resource [appConfig.properties]
+[INFO ] 2016-01-13 14:39:04.004 [DefaultListableBeanFactory] [main      ] - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@54c01e99: defining beans [propertyConfigurer,dataSource,auDataSource,config,supperDAO,tradeQueryDAO,userDAO]; root of factory hierarchy
+[INFO ] 2016-01-13 14:39:05.005 [ServerShell] [main      ] - system###192.168.10.54###启动会话服务器###ps1_1###中###NA
+[INFO ] 2016-01-13 14:39:05.005 [ServerShell] [main      ] - system###192.168.10.54###读取RMI配置信息###ps1_1###中###NA
+[INFO ] 2016-01-13 14:39:08.008 [ServerShell] [main      ] - system###192.168.10.54###读取RMI配置信息###ps1_1###成功###NA
+[INFO ] 2016-01-13 14:39:08.008 [ServerShell] [main      ] - system###192.168.10.54###获取RMI配置###rmi://127.0.0.1:17003/LogonRMI###成功###NA
+[INFO ] 2016-01-13 14:39:08.008 [ServerShell] [main      ] - system###192.168.10.54###同步RMI配置###rmi://127.0.0.1:17005/SyncRMI###成功###NA
+[ERROR] 2016-01-13 14:39:09.009 [SyncServer] [main      ] - system###192.168.10.54###查找对端同步的RMI###NA###失败java.rmi.ConnectException: Connection refused to host: 127.0.0.1; nested exception is: 
+	java.net.ConnectException: Connection refused: connect###NA
+[INFO ] 2016-01-13 14:39:09.009 [ServerShell] [main      ] - system###192.168.10.54###启动会话服务器###ps1_1###中###NA
+[INFO ] 2016-01-13 14:39:19.019 [ServerShell] [main      ] - system###192.168.10.54###RMI启动服务###ps1_1###成功###NA
+[INFO ] 2016-01-13 14:40:00.000 [audit] [RMI TCP Connection(4)-192.168.10.54] - 111
+[INFO ] 2016-01-13 14:40:04.004 [LogonRMIImpl] [RMI TCP Connection(4)-192.168.10.54] - system###192.168.10.54###登陆交易服务器###tpme.PMES.timebargain.server.model.Trader@3ee05ad6[
+  traderID=<null>
+  name=<null>
+  firmID=<null>
+  regWord=<null>
+  password=<null>
+  keyCode=<null>
+  keyStatus=0
+  logonIP=<null>
+  status=0
+  logonTime=0
+  clientToken=<null>
+  ZID=<null>
+]###中###NA
+[INFO ] 2016-01-13 14:40:05.005 [LogonRMIImpl] [RMI TCP Connection(4)-192.168.10.54] - system###192.168.10.54###登陆交易服务器###tpme.PMES.timebargain.server.model.Trader@3ee05ad6[
+  traderID=<null>
+  name=<null>
+  firmID=<null>
+  regWord=<null>
+  password=<null>
+  keyCode=<null>
+  keyStatus=0
+  logonIP=<null>
+  status=0
+  logonTime=0
+  clientToken=<null>
+  ZID=<null>
+]###失败###retCode: -1
+[INFO ] 2016-01-13 14:41:17.017 [ClassPathXmlApplicationContext] [main      ] - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7f70888e: display name [org.springframework.context.support.ClassPathXmlApplicationContext@7f70888e]; startup date [Wed Jan 13 14:41:17 CST 2016]; root of context hierarchy
+[INFO ] 2016-01-13 14:41:17.017 [XmlBeanDefinitionReader] [main      ] - Loading XML bean definitions from class path resource [PMES_timebargain.xml]
+[INFO ] 2016-01-13 14:41:17.017 [XmlBeanDefinitionReader] [main      ] - Loading XML bean definitions from class path resource [dataSource.xml]
+[INFO ] 2016-01-13 14:41:17.017 [ClassPathXmlApplicationContext] [main      ] - Bean factory for application context [org.springframework.context.support.ClassPathXmlApplicationContext@7f70888e]: org.springframework.beans.factory.support.DefaultListableBeanFactory@7ed75415
+[INFO ] 2016-01-13 14:41:17.017 [PropertyPlaceholderConfigurer] [main      ] - Loading properties file from class path resource [appConfig.properties]
+[INFO ] 2016-01-13 14:41:17.017 [DefaultListableBeanFactory] [main      ] - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7ed75415: defining beans [propertyConfigurer,dataSource,auDataSource,config,supperDAO,tradeQueryDAO,userDAO]; root of factory hierarchy
+[INFO ] 2016-01-13 14:41:17.017 [ServerShell] [main      ] - system###192.168.10.54###启动会话服务器###ps1_1###中###NA
+[INFO ] 2016-01-13 14:41:17.017 [ServerShell] [main      ] - system###192.168.10.54###读取RMI配置信息###ps1_1###中###NA
+[INFO ] 2016-01-13 14:41:18.018 [ServerShell] [main      ] - system###192.168.10.54###读取RMI配置信息###ps1_1###成功###NA
+[INFO ] 2016-01-13 14:41:18.018 [ServerShell] [main      ] - system###192.168.10.54###获取RMI配置###rmi://127.0.0.1:17003/LogonRMI###成功###NA
+[INFO ] 2016-01-13 14:41:18.018 [ServerShell] [main      ] - system###192.168.10.54###同步RMI配置###rmi://127.0.0.1:17005/SyncRMI###成功###NA
+[ERROR] 2016-01-13 14:41:19.019 [SyncServer] [main      ] - system###192.168.10.54###查找对端同步的RMI###NA###失败java.rmi.ConnectException: Connection refused to host: 127.0.0.1; nested exception is: 
+	java.net.ConnectException: Connection refused: connect###NA
+[INFO ] 2016-01-13 14:41:19.019 [ServerShell] [main      ] - system###192.168.10.54###启动会话服务器###ps1_1###中###NA
+[INFO ] 2016-01-13 14:41:29.029 [ServerShell] [main      ] - system###192.168.10.54###RMI启动服务###ps1_1###成功###NA
+[INFO ] 2016-01-13 14:41:43.043 [LogonRMIImpl] [RMI TCP Connection(4)-192.168.10.54] - Thread:27###192.168.10.54###LogonRMIImpl.logon###begin###null###begin###NA
+[INFO ] 2016-01-13 14:41:43.043 [LogonRMIImpl] [RMI TCP Connection(4)-192.168.10.54] - system###192.168.10.54###登陆交易服务器###tpme.PMES.timebargain.server.model.Trader@2523defe[
+  traderID=<null>
+  name=<null>
+  firmID=<null>
+  regWord=<null>
+  password=<null>
+  keyCode=<null>
+  keyStatus=0
+  logonIP=<null>
+  status=0
+  logonTime=0
+  clientToken=<null>
+  ZID=<null>
+]###中###NA
+[INFO ] 2016-01-13 14:41:43.043 [LogonRMIImpl] [RMI TCP Connection(4)-192.168.10.54] - Thread:27###192.168.10.54###LogonManager.logon###begin###null###begin###NA
+[INFO ] 2016-01-13 14:41:43.043 [LogonManager] [RMI TCP Connection(4)-192.168.10.54] - Thread:27###192.168.10.54###UserDAO.getOneTraderById###begin###null###begin###NA
+[INFO ] 2016-01-13 14:41:54.054 [LogonManager] [RMI TCP Connection(4)-192.168.10.54] - Thread:27###192.168.10.54###UserDAO.getOneTraderById###end###null###end###11827ms
+[INFO ] 2016-01-13 14:41:57.057 [LogonRMIImpl] [RMI TCP Connection(4)-192.168.10.54] - Thread:27###192.168.10.54###LogonManager.logon###end###null###end###13893ms
+[INFO ] 2016-01-13 14:41:57.057 [LogonRMIImpl] [RMI TCP Connection(4)-192.168.10.54] - system###192.168.10.54###登陆交易服务器###tpme.PMES.timebargain.server.model.Trader@2523defe[
+  traderID=<null>
+  name=<null>
+  firmID=<null>
+  regWord=<null>
+  password=<null>
+  keyCode=<null>
+  keyStatus=0
+  logonIP=<null>
+  status=0
+  logonTime=0
+  clientToken=<null>
+  ZID=<null>
+]###失败###retCode: -1
+[INFO ] 2016-01-13 14:41:57.057 [LogonRMIImpl] [RMI TCP Connection(4)-192.168.10.54] - Thread:27###192.168.10.54###LogonRMIImpl.logon###end###null###end###13920ms

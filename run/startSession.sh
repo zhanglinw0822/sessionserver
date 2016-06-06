@@ -5,4 +5,4 @@ for file in $baseDir/libs/*.jar
 do
    cp=$cp:$file
 done
-java -server -Xmx5120m -Xss128k -cp $cp tpme.PMES.timebargain.server.ServerShell >> $baseDir/stdout.out 2>&1 &
+java -server -Xmx5120m -Xss228k -cp $cp tpme.PMES.timebargain.server.ServerShell >> $baseDir/stdout.out 2>&1 &

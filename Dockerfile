@@ -1,7 +1,7 @@
 # Pull base image  
 FROM ubuntu
   
-MAINTAINER zing wang "zing.jian.wang@gmail.com"  
+MAINTAINER zhanglin "zhanglin@puxtech.com"  
   
 # update source  
 RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe"> /etc/apt/sources.list  

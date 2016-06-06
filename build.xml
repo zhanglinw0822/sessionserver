@@ -35,7 +35,7 @@
 	</target>
 
 	<target name="jar" depends="compile">
-		<jar jarfile="${destjar}/libs/${env.JOB_NAME}_SVN${env.SVN_REVISION}_B${env.BUILD_NUMBER}.jar" basedir="${dest}" />
+		<jar jarfile="${destjar}/libs/${env.JOB_NAME}_SVN${env.CHANGE_ID}_B${env.BUILD_NUMBER}.jar" basedir="${dest}" />
 	</target>
 
 	<target name="build" depends="jar">
@@ -49,7 +49,7 @@
 			<fileset file="${src}/PMES_timebargain.xml"></fileset>
 		</copy>
 
-		<zip destfile="${destjar}/${env.JOB_NAME}_SVN${env.SVN_REVISION}_B${env.BUILD_NUMBER}.zip">
+		<zip destfile="${destjar}/${env.JOB_NAME}_SVN${env.CHANGE_ID}_B${env.BUILD_NUMBER}.zip">
 			<fileset dir="${destjar}" />
 		</zip>
 

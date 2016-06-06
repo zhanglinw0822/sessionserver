@@ -37,9 +37,3 @@ RUN chmod 755 /etc/init.d/tomcat7
 ADD sessionserver_v33/ /opt/app/
 RUN unzip /opt/app/sessionserver*.zip -d /opt/app/sessionserver
 RUN chmod 755 /opt/app/sessionserver/startSession.sh
-  
-# Expose ports.  
-EXPOSE 8080  
-  
-# Define default command.  
-ENTRYPOINT service tomcat7 start && tail -f /opt/tomcat7/logs/catalina.out 

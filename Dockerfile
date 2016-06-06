@@ -8,7 +8,7 @@ RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe"> /etc/apt/
 RUN apt-get update  
 
 # Install zip  
-RUN apt-get install zip
+RUN apt-get -y install zip
 
 # Install curl  
 RUN apt-get -y install curl  

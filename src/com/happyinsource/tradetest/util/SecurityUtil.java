@@ -19,10 +19,10 @@ public class SecurityUtil {
 	   }
 	   
        /**
-        * AES鍔犲瘑
+        * AES加密
         * 
-        * @param content 闇�瑕佸姞瀵嗙殑鍐呭
-        * @param password  鍔犲瘑瀵嗙爜
+        * @param content 需要加密的内容
+        * @param password  加密密码
         * @return
         */
        public static byte[] AESEncrypt(byte[] content, byte[] key) {

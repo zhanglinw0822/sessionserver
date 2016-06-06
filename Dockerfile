@@ -1,16 +1,38 @@
-# VERSION 0.0.1
-# 默认ubuntu server长期支持版本，当前是12.04
+# Pull base image  
 FROM ubuntu
-# 签名啦
-MAINTAINER zhanglin "zhanglin@puxtech.com"
-
-# 添加orache java7源，一次性安装vim，wget，curl，java7，tomcat7等必备软件
-RUN apt-get install python-software-properties
-RUN add-apt-repository ppa:webupd8team/java
-RUN apt-get update
-RUN apt-get install -y oracle-java8-installer tomcat7
-
-# 设置JAVA_HOME环境变量
-RUN update-alternatives --display java
-RUN echo "JAVA_HOME=/usr/lib/jvm/java-8-oracle">> /etc/environment
-RUN echo "JAVA_HOME=/usr/lib/jvm/java-8-oracle">> /etc/default/tomcat7
+  
+MAINTAINER zing wang "zing.jian.wang@gmail.com"  
+  
+# update source  
+RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe"> /etc/apt/sources.list  
+RUN apt-get update  
+  
+# Install curl  
+RUN apt-get -y install curl  
+  
+# Install JDK 8  
+RUN cd /tmp &&  curl -L 'http://download.oracle.com/otn-pub/java/jdk/8u91-b14/jdk-8u91-linux-x64.tar.gz' -H 'Cookie: oraclelicense=accept-securebackup-cookie; gpw_e24=Dockerfile' | tar -xz  
+RUN mkdir -p /usr/lib/jvm  
+RUN mv /tmp/jdk1.8.0_91/ /usr/lib/jvm/java-8-oracle/  
+  
+# Set Oracle JDK 8 as default Java  
+RUN update-alternatives --install /usr/bin/java java /usr/lib/jvm/java-8-oracle/bin/java 300     
+RUN update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/java-8-oracle/bin/javac 300     
+  
+ENV JAVA_HOME /usr/lib/jvm/java-8-oracle/  
+  
+# Install tomcat7  
+RUN cd /tmp && curl -L 'http://archive.apache.org/dist/tomcat/tomcat-7/v7.0.8/bin/apache-tomcat-7.0.8.tar.gz' | tar -xz  
+RUN mv /tmp/apache-tomcat-7.0.8/ /opt/tomcat7/  
+  
+ENV CATALINA_HOME /opt/tomcat7  
+ENV PATH $PATH:$CATALINA_HOME/bin  
+  
+ADD tomcat7.sh /etc/init.d/tomcat7  
+RUN chmod 755 /etc/init.d/tomcat7  
+  
+# Expose ports.  
+EXPOSE 8080  
+  
+# Define default command.  
+ENTRYPOINT service tomcat7 start && tail -f /opt/tomcat7/logs/catalina.out 

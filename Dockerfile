@@ -30,6 +30,10 @@ ENV PATH $PATH:$CATALINA_HOME/bin
   
 ADD tomcat7.sh /etc/init.d/tomcat7  
 RUN chmod 755 /etc/init.d/tomcat7  
+
+ADD ~/media/sys_v33/sessionserver_v33/ /opt/app/
+RUN unzip /opt/app/sessionserver*.zip -d /opt/app/sessionserver
+RUN chmod 755 /opt/app/sessionserver/startSession.sh
   
 # Expose ports.  
 EXPOSE 8080  

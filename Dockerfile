@@ -6,7 +6,10 @@ MAINTAINER zhanglin "zhanglin@puxtech.com"
 # update source  
 RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe"> /etc/apt/sources.list  
 RUN apt-get update  
-  
+
+# Install zip  
+RUN apt-get install zip
+
 # Install curl  
 RUN apt-get -y install curl  
   
